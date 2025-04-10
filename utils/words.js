@@ -11,10 +11,7 @@ export const TECHNICAL_WORDS = ["admin", "agile", "alias", "align", "alert", "ap
 "scipy", "scrum", "score", "shell", "shift", "sieve", "sleep", "slice", "small", "sorts", 
 "space", "splay", "split", "stack", "strip", "style", "super", "swift", "table", "tasks", 
 "tesla", "throw", "title", "token", "torch", "touch", "trace", "track", "train", "tuple", 
-"union", "value", "virus", "vuejs", "where", "while", "width", "write",
-"array", "asset", "build", "cycle", "input", "joint", 
-"modem", "robot", "setup", "share", "theme",
-"utils",
+"union", "value", "virus", "vuejs", "where", "while", "width", "write","build", "input", "joint","setup", "share","utils",
 ]
   
   export const ENGLISH_WORDS = [
