@@ -41,6 +41,7 @@ export function RulesDialog() {
           <h2 className="text-xl font-semibold text-gray-800 dark:text-white">Game Rules</h2>
           <ul className="list-disc pl-5 space-y-2">
             <li>Each guess must be a valid 5-letter word</li>
+            <li>Wuzzle Words doesn't contain any repeated letters (eg: in word <b>STATE</b> 't' repeated twice.)</li>
             <li>Press Enter to submit your guess</li>
             <li>After each guess, the color of the tiles will change to show how close your guess was</li>
           </ul>
