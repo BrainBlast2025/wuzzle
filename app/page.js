@@ -24,7 +24,7 @@ export default function HomePage() {
       
       <SignedIn>
         <div className="container mx-auto px-4 py-4">
-          <header className="mb-4 text-center">
+          <header className="mb-2 text-center">
             <h1 className="text-4xl font-bold text-gray-800 dark:text-white">
               WUZZLE
             </h1>

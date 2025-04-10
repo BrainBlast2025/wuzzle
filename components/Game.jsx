@@ -12,6 +12,7 @@ import { useRouter } from "next/navigation";
 import { TECHNICAL_WORDS, ALL_VALID_WORDS } from "../utils/words";
 import { toast } from "react-hot-toast";
 import Link from "next/link";
+import { RulesDialog } from "./RulesDialog";
 
 const TARGET_WORD = TECHNICAL_WORDS[Math.floor(Math.random() * TECHNICAL_WORDS.length)].toUpperCase();
 
@@ -119,9 +120,7 @@ function GameInner() {
       <div className="min-h-screen flex flex-col items-center justify-start px-2 bg-gray-50 dark:bg-gray-900">
         <div className="w-full max-w-md flex flex-col items-center h-[85vh] p-1">
           <header className="w-full mb-1 text-center">
-            <Link href="/rules" className="text-blue-600 dark:text-blue-400 hover:underline text-sm">
-              How to Play
-            </Link>
+          <RulesDialog/>
             <div className="flex justify-between items-center text-xs text-gray-600 dark:text-gray-300 mt-1 px-2">
               <span>Player: {user?.firstName || "Guest"}</span>
               <span>Guesses: {guesses.length}/6</span>
@@ -132,7 +131,7 @@ function GameInner() {
             <Board guesses={guesses} currentGuess={current} targetWord={TARGET_WORD} />
           </div>
 
-          <div className="w-full max-w-md mb-1 mt-auto">
+          <div className="w-full max-w-md">
             <Keyboard onKey={handleKey} usedKeys={usedKeys} />
           </div>
         </div>

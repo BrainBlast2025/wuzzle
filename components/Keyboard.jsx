@@ -25,7 +25,7 @@ export default function Keyboard({ onKey, usedKeys = {} }) {
   };
 
   return (
-    <div className="mt-6 w-full max-w-lg mx-auto">
+    <div className="mt-3 w-full max-w-lg mx-auto">
       {rows.map((row, i) => (
         <div key={i} className="flex justify-center mb-2">
           {row.map((key) => (
