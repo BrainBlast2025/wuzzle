@@ -49,7 +49,7 @@ export default function Tile({ letter, status, position }) {
   return (
     <div
       className={`
-        w-14 h-14 sm:w-12 sm:h-12 
+        w-12 h-12
         flex items-center justify-center
         text-2xl sm:text-3xl font-bold uppercase
         border-2 ${getBorderColor()} rounded
