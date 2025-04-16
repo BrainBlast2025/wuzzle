@@ -10,9 +10,6 @@ export const getLeaderboard = query({
 
     // Sort first by guesses, then by duration
     const sortedWins = wins.sort((a, b) => {
-      if (a.guesses !== b.guesses) {
-        return a.guesses - b.guesses; // Lower guesses come first
-      }
       return a.duration - b.duration; // If guesses are equal, shorter duration comes first
     });
 
